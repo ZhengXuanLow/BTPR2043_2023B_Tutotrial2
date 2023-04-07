@@ -29,8 +29,16 @@ class _StoryPageState extends State<StoryPage> {
     return Scaffold(
       body: Container(
         //TODO: Step 1 - Find a background image, add the background image into the images directory, then add the background image to this Container.
+        decoration: new BoxDecoration(
+          image: new DecorationImage(image: new AssetImage('images/VRChat.png'), fit: BoxFit.cover,),
+        ),
+
         padding: EdgeInsets.symmetric(vertical: 50.0, horizontal: 15.0),
         constraints: BoxConstraints.expand(),
+
+
+
+
         child: SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
